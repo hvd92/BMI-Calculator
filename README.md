@@ -1,107 +1,69 @@
-# ⚡ Electricity Bill Calculator
+# Temperature Converter in C
 
-A simple C program that calculates electricity bills based on the number of units consumed using predefined rate slabs.
+A menu-driven C program that converts temperatures between Celsius, Fahrenheit, and Kelvin.
 
-## 📌 Project Overview
+## Features
+- Celsius to Fahrenheit
+- Fahrenheit to Celsius
+- Celsius to Kelvin
+- Kelvin to Celsius
+- Fahrenheit to Kelvin
+- Kelvin to Fahrenheit
+- Menu-driven interface with an exit option
+- Invalid menu choice handling
 
-This project is built using the C programming language. It takes electricity consumption (units) as input from the user and calculates the total bill using different rates.
-
-## ✨ Features
-
-- User input for electricity units
-- Slab-based bill calculation
-- Invalid input handling for negative units
-- User-defined function
-- Simple and beginner-friendly C code
-
-## 💰 Electricity Rate Slabs
-
-| Electricity Units | Rate |
+## Conversion Formulas
+| Conversion | Formula |
 |---|---|
-| 0–100 | ₹3/unit |
-| 101–200 | ₹5/unit (additional units) |
-| Above 200 | ₹7/unit (additional units) |
+| Celsius to Fahrenheit | (C × 9/5) + 32 |
+| Fahrenheit to Celsius | (F − 32) × 5/9 |
+| Celsius to Kelvin | C + 273.15 |
+| Kelvin to Celsius | K − 273.15 |
+| Fahrenheit to Kelvin | (F − 32) × 5/9 + 273.15 |
+| Kelvin to Fahrenheit | (K − 273.15) × 9/5 + 32 |
 
-*Note: These are sample rates used for this project, not official electricity tariffs.*
-
-## 🖥️ Sample Output
-
+## Sample Output
 ```text
-Enter electricity units: 50
-Total bill = Rs. 150.00
+===== TEMPERATURE CONVERTER =====
+1. Celsius to Fahrenheit
+2. Fahrenheit to Celsius
+3. Celsius to Kelvin
+4. Kelvin to Celsius
+5. Fahrenheit to Kelvin
+6. Kelvin to Fahrenheit
+7. Exit
+Enter your choice: 1
+Enter temperature: 37
+Result: 98.60 F
 ```
 
-```text
-Enter electricity units: 150
-Total bill = Rs. 550.00
-```
-
-```text
-Enter electricity units: 250
-Total bill = Rs. 1150.00
-```
-
-## 🛠️ Technologies Used
-
-- C Programming Language
-- GCC Compiler
-- Git
-- GitHub
-
-## 📂 Project Structure
-
-```text
-Electricity-Bill-Calculator/
-├── electricity_bill_calculator.c
-└── README.md
-```
-
-## ▶️ How to Run
-
-**1. Clone the repository**
-
+## How to Compile and Run
+Compile using GCC:
 ```bash
-git clone YOUR_REPOSITORY_URL
+gcc temperature_converter.c -o temperature_converter
 ```
 
-**2. Navigate to the project folder**
-
+Run on Windows:
 ```bash
-cd Electricity-Bill-Calculator
+temperature_converter.exe
 ```
 
-**3. Compile the program**
-
+Run on Linux/macOS:
 ```bash
-gcc electricity_bill_calculator.c -o bill
+./temperature_converter
 ```
 
-**4. Run the program**
+## Concepts Used
+- Variables and data types (`int`, `float`)
+- `printf()` and `scanf()`
+- `switch-case`
+- `do-while` loop
+- `if` statement
+- Arithmetic operations
 
-Windows:
+## Requirements
+- GCC compiler (or another C compiler)
 
-```bash
-bill.exe
-```
+## Author
+Himanshu
 
-Linux/macOS:
-
-```bash
-./bill
-```
-
-## 📚 Concepts Used
-
-- Variables and Data Types
-- Functions
-- If-Else Statements
-- User Input and Output
-- Arithmetic Operations
-
-## 👨‍💻 Author
-
-**Himanshu**
-
----
-
-⭐ *A beginner C programming project created for learning and practice.*
